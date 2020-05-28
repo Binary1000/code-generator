@@ -1,0 +1,21 @@
+package ${packageRoot}.mapper;
+
+import ${packageRoot}.entity.${Entity};
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface ${Entity}DAO {
+
+    List<${Entity}> queryById(Integer id);
+
+    List<${Entity}> queryAll();
+
+    ${Entity} insert(${Entity} ${entity});
+
+    boolean delete(Integer id);
+
+    ${Entity} update(${Entity} ${entity});
+
+}

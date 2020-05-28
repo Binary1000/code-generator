@@ -1,0 +1,41 @@
+package ${packageRoot}.service.impl;
+
+import ${packageRoot}.entity.${Entity};
+import ${packageRoot}.mapper.${Entity}DAO;
+import ${packageRoot}.service.${Entity}Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class ${Entity}ServiceImpl implements ${Entity}Service {
+
+    @Autowired
+    ${Entity}DAO ${entity}DAO;
+
+    @Override
+    public List<${Entity}> queryById(Integer id) {
+        return ${entity}DAO.queryById(id);
+    }
+
+    @Override
+    public List<${Entity}> queryAll() {
+        return ${entity}DAO.queryAll();
+    }
+
+    @Override
+    public ${Entity} insert(${Entity} ${entity}) {
+        return ${entity}DAO.insert(${entity});
+    }
+
+    @Override
+    public boolean delete(Integer id) {
+        return ${entity}DAO.delete(id);
+    }
+
+    @Override
+    public ${Entity} update(${Entity} ${entity}) {
+        return ${entity}DAO.update(${entity});
+    }
+}

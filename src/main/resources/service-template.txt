@@ -1,0 +1,18 @@
+package ${packageRoot}.service;
+
+import ${packageRoot}.entity.File;
+
+import java.util.List;
+
+public interface ${Entity}Service {
+
+    List<${Entity}> queryById(Integer id);
+
+    List<${Entity}> queryAll();
+
+    ${Entity} insert(${Entity} ${entity});
+
+    boolean delete(Integer id);
+
+    ${Entity} update(${Entity} ${entity});
+}
